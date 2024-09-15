@@ -1,0 +1,128 @@
+<div
+  class="align-items-center d-flex justify-content-center mx-auto mt-5"
+  style="overflow: hidden; height: 100%"
+>
+<div
+    class="card col-10 col-sm-8 col-md-4 col-lg-4 col-xl-3 mt-4 text-center conteudo-form-login"
+  >
+  <div class="login-box-body col-12">
+    <div class="form-group context">
+      <div class="logo col-8">
+        <img class="img-logo" src="../../../assets/img/LOGO LICRITIQ.png" />
+      </div>
+    </div>
+    <div class="form-group context-inputs p-2">
+        <div class="row" style="height: 100%">
+          <div class="form-group col-12 context-interno-inputs">
+            <div class="input-group ngln">
+              <div class="input-group-prepend lgp mt-4">
+                <span class="input-group-text">
+                  <fa-icon
+                    class="icon-login"
+                    [icon]="['fas', 'circle-user']"
+                  ></fa-icon>
+                </span>
+              </div>
+              <input
+              name="UserName"
+              class="form-control input-login mt-4"
+              placeholder="Usuário"
+              type="text"
+              autocomplete="current-password"
+              required
+              >
+            </div>
+          </div>
+          <div class="form-group col-12 context-interno-inputs mt-2">
+            <div class="input-group ngln">
+              <div class="input-group-prepend lgp lgp-senha">
+                <span class="input-group-text">
+                  <fa-icon
+                    class="icon-login"
+                    [icon]="['fas', 'key']"
+                  ></fa-icon>
+                </span>
+              </div>
+              <input
+              id="PasswordHash"
+              name="PasswordHash"
+              class="form-control input-senha"
+              type="password"
+              placeholder="Senha"
+              autocomplete="current-password"
+              required/>
+              <div class="input-group-append lgp">
+                <span
+                  class="input-group-text append-icon-senha"
+                  (mousedown)="VisualizarSenha('PasswordHash')"
+                  (mouseup)="VisualizarSenha('PasswordHash')"
+                >
+                  <fa-icon
+                    class="icon-login"
+                    [icon]="['fas', 'eye']"
+                  ></fa-icon>
+                </span>
+              </div>
+            </div>
+          </div>
+          <div class="form-cadastre mt-4">
+            <button class="cadastre"
+            data-bs-toggle="modal"
+            data-bs-target="#modalCadastrar"
+            (click)="abriu">
+                Ainda não tem um perfil? Cadastre-se aqui!
+            </button>
+          </div>
+          <div class="form-group context">
+            <button
+              mat-raised-button
+              id="button-login"
+              class="btn btn-danger btn-lg mx-auto mt-4 mb-3"
+              style="border-radius: 2rem">
+            LOGAR
+            </button>
+          </div>
+        </div>
+    </div>
+  </div>
+</div>
+</div>
+
+
+<!-- MODAL -->
+<div class="modal fade" id="modalCadastrar" tabindex="-1" aria-labelledby="modalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="modalLabel">Cadastrar Usuário</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form [formGroup]="cadastroForm" (ngSubmit)="onSubmit()">
+          <div class="mb-3">
+            <label for="nome" class="form-label">Nome</label>
+            <input type="text" id="nome" class="form-control" formControlName="nome">
+            <div *ngIf="hasError('nome', 'required')" class="text-danger">Nome é obrigatório.</div>
+          </div>
+
+          <div class="mb-3">
+            <label for="email" class="form-label">E-mail</label>
+            <input type="email" id="email" class="form-control" formControlName="email">
+            <div *ngIf="hasError('email', 'required')" class="text-danger">E-mail é obrigatório.</div>
+            <div *ngIf="hasError('email', 'email')" class="text-danger">E-mail inválido.</div>
+          </div>
+
+          <div class="mb-3">
+            <label for="senha" class="form-label">Senha</label>
+            <input type="password" id="senha" class="form-control" formControlName="senha">
+            <div *ngIf="hasError('senha', 'required')" class="text-danger">Senha é obrigatória.</div>
+            <div *ngIf="hasError('senha', 'minlength')" class="text-danger">Senha deve ter no mínimo 6 caracteres.</div>
+          </div>
+
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+            <button type="submit" class="btn btn-primary">Cadastrar</button>
+          </div>
+        </form>
+      </div>
+    </div>

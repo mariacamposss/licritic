@@ -6,15 +6,21 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './pages/home/home.component';
 import { RouterModule } from '@angular/router';
 import { ReactiveFormsModule } from '@angular/forms';
+import { LoginComponent } from './pages/login/login.component';
+import { FaIconLibrary, FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { faCircleUser, faEye, faKey, faXmark } from '@fortawesome/free-solid-svg-icons';
 
 @NgModule({
   declarations: [
     AppComponent,
-    HomeComponent
+    HomeComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
-    RouterModule
+    AppRoutingModule,
+    FontAwesomeModule,
+    ReactiveFormsModule
   ],
   // schemas: [
   //   CUSTOM_ELEMENTS_SCHEMA
@@ -22,4 +28,9 @@ import { ReactiveFormsModule } from '@angular/forms';
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {
+
+  constructor(private library: FaIconLibrary){
+    library.addIcons(faCircleUser,faKey,faEye,faXmark)
+  }
+ }

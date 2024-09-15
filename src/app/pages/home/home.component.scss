@@ -1,0 +1,19 @@
+$bg-color:#2D3033;
+
+.card-body{
+    background-color: #3F566B;
+    height: 100%;
+    display: flex;
+
+}
+
+.card-img{
+    height: 10rem; /* Faz a imagem ocupar a altura total do card */
+    width: 10rem; /* Mantém a proporção da imagem */
+    object-fit: cover;
+}
+
+
+.user-name{
+    background-color:$bg-color ;
+}

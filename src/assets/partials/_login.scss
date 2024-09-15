@@ -1,0 +1,94 @@
+
+
+$bg-color:#3F566B;
+.conteudo-form-login{
+    background: $bg-color;
+    text-align: center !important;
+    height: 400px;
+    width: 400px;
+    transition: all 0.5s ease-in-out !important;
+    border-radius: 0;
+    margin-bottom: 7rem;
+  }
+  
+  .conteudo-form-login:hover {
+    box-shadow: 0 15px 30px 0 #3F566B !important;
+  }
+  
+  .login-box-body{
+    box-shadow: 0 3px 6px gray;
+    height: 100%;
+  }
+
+  .context-inputs{
+    height: 38%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .input-group-text{
+    background-color: $bg-color;
+  }
+
+  .input-login {
+    border-left: none !important;
+    border-radius: 0 2rem 2rem 0 !important;
+    background-color: #ffffff;
+  
+
+
+  }
+  
+  .input-senha{
+    border-left: none !important;
+    border-right: none !important;
+    border-radius: 0 0 0 0 !important;
+  }
+
+  .logo {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    height: 80px;
+    background-color: $bg-color;
+    border: none;
+    color: white;
+    font-size: 13px;
+    //box-shadow: 0 5px 15px 0 gray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto;
+    width: 68%;
+    border-radius: 5px;
+}
+
+.img-logo {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.icon-login{
+    color: #ffffff;
+    font-size: 1.2rem;
+  }
+  
+  .input-group-append {
+    border-radius: 0 2rem 2rem 0 !important;
+
+  }
+
+  .cadastre{
+    color:#ffffff;
+    background-color: #3F566B;
+    border: #3F566B;
+  }
+
+  #button-login{
+    background-color:#720505;
+    border: #720505;
+  }
+
+
+  .modal-content{
+    background-color: $bg-color;
+  }
