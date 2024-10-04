@@ -10,6 +10,7 @@ import { LoginComponent } from './pages/login/login.component';
 import { FaIconLibrary, FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { faCircleUser, faEye, faKey, faXmark } from '@fortawesome/free-solid-svg-icons';
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -19,8 +20,9 @@ import { faCircleUser, faEye, faKey, faXmark } from '@fortawesome/free-solid-svg
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FontAwesomeModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    FontAwesomeModule
+    
   ],
   // schemas: [
   //   CUSTOM_ELEMENTS_SCHEMA
