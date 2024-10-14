@@ -1,11 +1,29 @@
-$bg-color:#2D3033;
+$bg-color:#3F566B;
+$bh-color:#2D3033;
 
 body {
-    font-family: 'Poppins', 'Roboto', sans-serif;
+   
     font-size: .9rem;
-    background:$bg-color;
     color: white;
+    background-color:$bh-color;
+    font-family: 'Roboto Slab', serif;
+    overflow-x: hidden;
 }
+
+.container {
+    max-width: 70%;
+    @media screen and (max-width: 1200px) {
+        max-width: 80%;
+    }
+    @media screen and (max-width: 990px) {
+        max-width: 90%;
+    }
+    @media screen and (max-width: 760px) {
+        max-width: 100%;
+    }
+}
+
+
 
 // .card-header{
 //     background:$bg-color;

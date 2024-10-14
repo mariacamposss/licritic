@@ -1,13 +1,25 @@
 $bg-color:#3F566B;
 $bh-color:#2D3033;
 
-.header-card{
-    background-color:$bh-color ;
-    color: white;
-    font-size: 0.1rem;
-    border: #2D3033;
+poster-viewdata{
+    display: block;
+    float: right;
+    padding-bottom: 2px;
 }
 
-.livros-popular{
-    background-color: $bg-color;
+.title-hero {
+    color: #abc;
+    font-size: 2rem;
+    line-height: 1.23076923;
+}
+
+.title-hero, .title-maxi {
+    font-family: Graphik-Light-Web, sans-serif;
+    font-weight: 400;
+    margin: 0 0 2.46153846rem;
+    text-align: center;
+}
+
+.section-heading a {
+    color: #9ab;
 }
