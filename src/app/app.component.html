@@ -1,5 +1,4 @@
-
-<app-navbar
-          *ngIf="mostrarMenus"
-        ></app-navbar>
-<router-outlet></router-outlet>
+<app-navbar *ngIf="mostrarMenus"></app-navbar>
+  <div class="flex-grow-1 container-fluid p-0">
+  <router-outlet></router-outlet>
+</div>
