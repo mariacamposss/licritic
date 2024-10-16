@@ -10,6 +10,7 @@ import { LoginComponent } from './pages/login/login.component';
 import { FaIconLibrary, FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { faCircleUser, faEye, faKey, faXmark } from '@fortawesome/free-solid-svg-icons';
 import { NavbarComponent } from './shared/navbar/navbar.component';
+import { LivrosComponent } from './pages/livros/livros/livros.component';
 
 
 @NgModule({
@@ -17,7 +18,8 @@ import { NavbarComponent } from './shared/navbar/navbar.component';
     AppComponent,
     HomeComponent,
     LoginComponent,
-    NavbarComponent
+    NavbarComponent,
+    LivrosComponent
   ],
   imports: [
     BrowserModule,
