@@ -1,72 +1,60 @@
-
-<nav
-  class="navbar navbar-expand-md navbar-dark flex-fill"
-  style="overflow: hidden;height: 80px;"
->
+<nav class="navbar navbar-expand-md navbar-dark flex-fill" style="height: 80px;">
   <div class="navtitulo col-4 col-sm-4 col-md-4 col-lg-4 col-xl-4">
     <div class="row">
-        <ul
-          class="navbar-nav flex-fill mt-0 align-items-center left-nav"
-          style="overflow: hidden"
-        >
-        
-        </ul>
-      </div>
+      <ul class="navbar-nav flex-fill mt-0 align-items-center left-nav" >
+
+      </ul>
     </div>
+  </div>
 
 
-  <div
-    class="navitems col-8 col-sm-8 col-md-8 col-lg-6 col-xl-6" 
-    style="display: flex; justify-content: flex-end; align-items: center; justify-content: end;"
-  >
-   
+  <div class="navitems col-8 col-sm-8 col-md-8 col-lg-6 col-xl-6"
+    style="display: flex; justify-content: flex-end; align-items: center; justify-content: end;">
+
+    <ul class="menu">
     <li class="navitem books-page main-nav-books">
-        <a href="/livros/" style="text-decoration: none;">
-           <span class="label" >
-            LIVROS
-           </span> 
-        </a>
+      <a href="/livros/" style="text-decoration: none;">
+        <span class="label">
+          LIVROS
+        </span>
+      </a>
     </li>
     <li class="navitem lists-page main-nav-lists">
-      <a href="/listas/"  style="text-decoration: none;">
+      <a href="/listas/" style="text-decoration: none;">
         <span class="label">
-         LISTAS
-        </span> 
-     </a>
+          LISTAS
+        </span>
+      </a>
     </li>
     <li class="navitem main-nav-people">
-      <a href="/membros/"  style="text-decoration: none;">
+      <a href="/membros/" style="text-decoration: none;">
         <span class="label">
-         MEMBROS
-        </span> 
-     </a>
+          MEMBROS
+        </span>
+      </a>
     </li>
-  
-    <ul class="col-12  nav-list " style="display: contents;list-style-type: none;justify-content: end;">
-      <li class="navitem nav-account js-nav-account" style="right: 47;">
-          <a> maria</a>
+      <li class="navitem nav-account js-nav-account">
+        <a> maria</a>
+
+        <ul class=" col-12" >
+          <li class="divider">
+            <a href="home">Home</a>
+          </li>
+          <li>
+            <a href="">Profile</a>
+          </li>
+          <li>
+            <a href="livros">Livros</a>
+          </li>
+          <li>
+            <a>Listas</a>
+          </li>
+          <li (click)="Deslogar()" style="cursor: pointer;">
+           <a>Logout</a>
+          </li>
+        </ul>
       </li>
-          <ul class="subnav col-12" style="display: none;">
-            <li class="divider">
-              <a href="home">home</a>
-            </li>
-            <li >
-              <a href="">Profile</a>
-            </li>
-            <li>
-              <a href="livros">Livros</a>
-            </li>
-            <li>
-              Listas
-            </li>
-            <li>
-              <a href="#">Maria</a>
-            </li>
-            <li>
-              Logout
-            </li>
-          </ul>
-</ul>
+   </ul>
   </div>
 </nav>
 
