@@ -1,0 +1,17 @@
+$bg-color:#3F566B;
+$bh-color:#2D3033;
+
+.menuList{
+    position: relative;
+    list-style: none;
+}
+
+.menuFilter{
+    position: relative;;
+    list-style: none;
+}
+
+.header-filtro{
+    background-color: $bh-color;
+    border: transparent;
+}
