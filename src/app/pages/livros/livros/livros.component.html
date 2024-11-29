@@ -1,59 +1,81 @@
-<div class="align-items-center" style="overflow-y: hidden">
-    <div class="align-items-center mx-auto mt-2 pt-0 p-5 pt-0" style="overflow: hidden">
-
-        <div class="card" style="border: transparent; color: white;">
-            <div class="header-filtro">
-                <div class="row  d-flex align-items-center">
-                       <li class="menuList col-8 d-flex align-items-center">
-                        <a class="me-3">Filtre por: </a>
-                        <div class="btn-group">
-                            <button type="button" class="btn dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
-                            style="color: white;">
-                                ANO
-                            </button>
-                            <div class="dropdown-menu">
-                                <a class="dropdown-item">2024</a>
-                            </div>
-                            <!-- <li class="divider me-4">
-                                <a>ANO</a>
-                                <ul>
-                                    <Li>2024</Li>
-                                </ul>
-                            </li> -->
-                            <li class="me-3">
-                                AVALIAÇÃO
-                            </li>
-                            <li class="me-3">
-                                POPULAR
-                            </li>
-                            <li class="me-3">
-                                GENÊROS
-                            </li>
-                            <li class="me-3">
-                                SERVIÇO
-                            </li>
-                            <li >
-                                OUTROS
-                            </li>
+<div class="align-items-center">
+    <div class="align-items-center mx-auto mt-2 pt-0 p-5 pt-0">
+        <div class="section-filtros">
+            <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                <div class="row">
+                    <div class="col-7">
+                        <section class="filtre-por">
+                            <h3 class="section-heading">
+                                Filtre por
+                            </h3>
+                            <ul class="bar-nav mt-2" style="list-style: none;display: inline-flex;">
+                                <li>
+                                    <section class="smenu-wrapper">
+                                        <div class="smenu">
+                                            <label>
+                                                Ano
+                                                <fa-icon class="fs" [icon]="['fas', 'caret-down']">
+                                                </fa-icon>
+                                            </label>
+                                        </div>
+                                    </section>
+                                </li>
+                                <li>
+                                    <section class="smenu-wrapper">
+                                        <div class="smenu">
+                                            <label>
+                                                Avaliação
+                                                <fa-icon class="fs icon-dashboard" [icon]="['fas', 'fa-caret-down']">
+                                                </fa-icon>
+                                            </label>
+                                        </div>
+                                    </section>
+                                </li>
+                                <li>
+                                    <section class="smenu-wrapper">
+                                        <div class="smenu">
+                                            <label>
+                                                Popular
+                                                <fa-icon class="fs icon-dashboard" [icon]="['fas', 'fa-caret-down']">
+                                                </fa-icon>
+                                            </label>
+                                        </div>
+                                    </section>
+                                </li>
+                                <li>
+                                    <section class="smenu-wrapper">
+                                        <div class="smenu">
+                                            <label>
+                                                Genêro
+                                                <fa-icon class="fs icon-dashboard" [icon]="['fas', 'fa-caret-down']">
+                                                </fa-icon>
+                                            </label>
+                                        </div>
+                                    </section>
+                                </li>
+                            </ul>
+                        </section>
+                    </div>
+                    <div class="col-5 mt-3">
+                        <div class="ache-livro">
+                            <fieldset>
+                                <label class="section-heading">
+                                    Ache um livro
+                                </label>
+                                <input type="text" class="field field-large ac_input">
+                            </fieldset>
                         </div>
-                       </li>
-                    
-                    <div class="col-4 search-book text-end align-items-center justify-content-end">
-                        <label class="me-2 mb-4">Ache um livro
-                            <input type="text" class="field field-large ac_input" data-url="" autocomplete="off">
-                        </label>
-                
                     </div>
                 </div>
             </div>
         </div>
-        <section id="livros-populares" class="section mt-4">
-            <h3 class="section-heading">
-                <a>Livros populares este mês</a>
-            </h3>
-            <div class="carousel-wrap carousel-horizontal">
-                <ul class="carousel-nav" style="list-style-type: none;">
-                    <li>
+        <section id="popular-livros" class="section" style="display: block;margin: 0 0 30px;">
+            <h2 class="section-heading mt-5">
+                <a>Populares essa semana</a>
+            </h2>
+            <div class="carousel-weap carousel-horizontal">
+                <ul class="carousel-nav">
+                    <li class="carousel-prev">
                         <a href="#" class="carousel-disabled">
                             <span>Prev</span>
                         </a>
@@ -64,30 +86,117 @@
                         </a>
                     </li>
                 </ul>
-                <div class="carousel-mask" style="width: 950px;">
-                    <ul class="poster-list book-list -p230 bool-slider carousel" style="width: 4790px; left: 0px;list-style-type: none;">
-                        <li class="listitem">
-                            <div class="react-component">
-                                <div>
-                                <img src="../../../../assets/img/cancaodeninar.jpg" width="230" height="265" class="image"> 
 
-                                </div>
+                <div class="carousel-mask" style="width: 950px;display: block;">
+                    <ul class="poster-list film-list -p230 film-slider carousel" style="width: 4790px; left: 0px;">
+                        <li class="listitem">
+                            <div
+                                class="react-component poster book-poster book-poster-868459 -attributed linked-book-poster not-in-watchlist">
+
+                                <img src="../../../assets/img/cancaodeninar.jpg" width="230" height="345" class="image">
+                                <span class="overlay"></span>
+                                <span class="overlay-actions js-film-options -w230" style="display: none;">
+                                    <span class="watch-link-target" data-watchable-uid="film:337036">
+                                        <span class="watch-link">
+                                            <span class="has-icon icon-16 ajax-click-action  icon-watch"
+                                                data-action="/s/film:337036/watch/" data-confirm=""
+                                                data-modal-confirm="true">
+                                                <span class="icon">
+
+                                                </span>Watch this film?
+                                            </span>
+                                        </span>
+                                    </span>
+                                    <span class="like-link-target" data-likeable-uid="film:337036">
+                                        <span class="like-link">
+                                            <span class="has-icon icon-16 ajax-click-action  icon-like"
+                                                data-action="/s/film:337036/like/" data-recaptcha-action="film_like"
+                                                data-confirm="" data-modal-confirm="true">
+                                                <span class="icon">
+
+                                                </span>Like this film?
+                                            </span></span>
+                                    </span>
+                                    <span class="replace menu-link icon">
+
+                                    </span>
+                                </span>
+                                <ul class="book-stats" style="list-style: none;">
+                                    <li class="stat-bookstat-watches">
+                                        <a href="/film/wicked-2024/members/"
+                                            class="has-icon icon-watched icon-16 tooltip"
+                                            data-original-title="Watched by 398,586&nbsp;members">
+                                            <span class="icon">
+                                                <fa-icon class="fs d-icon" [icon]="['fas', 'eye']">
+                                                </fa-icon>
+                                            </span>399K</a>
+                                    </li>
+                                    <li class="stat bookstat-lists">
+                                        <a>
+                                            <span class="icon">
+                                                <fa-icon class="fs d-icon" [icon]="['fas', 'heart']">
+                                                </fa-icon> </span>
+                                        </a>
+                                    </li>
+                                </ul>
                             </div>
                         </li>
-                    </ul>
-                    <ul class="book-stats" style="list-style: none;">
-                        <li class="stat bookstat-watches">
+                        <li class="listitem">
+                            <div
+                                class="react-component poster book-poster book-poster-868459 -attributed linked-book-poster not-in-watchlist">
+                                <img src="../../../assets/img/cancaodeninar.jpg" width="230" height="345" class="image">
+                                <span class="overlay"></span>
+                                <span class="overlay-actions js-film-options -w230" style="display: none;">
+                                    <span class="watch-link-target" data-watchable-uid="film:337036">
+                                        <span class="watch-link">
+                                            <span class="has-icon icon-16 ajax-click-action  icon-watch"
+                                                data-action="/s/film:337036/watch/" data-confirm=""
+                                                data-modal-confirm="true">
+                                                <span class="icon">
 
-                        </li>
-                        <li class="stat bookstat-list">
+                                                </span>Watch this film?
+                                            </span>
+                                        </span>
+                                    </span>
+                                    <span class="like-link-target" data-likeable-uid="film:337036">
+                                        <span class="like-link">
+                                            <span class="has-icon icon-16 ajax-click-action  icon-like"
+                                                data-action="/s/film:337036/like/" data-recaptcha-action="film_like"
+                                                data-confirm="" data-modal-confirm="true">
+                                                <span class="icon">
 
-                        </li>
-                        <li class="stat bookstat-likes">
+                                                </span>Like this film?
+                                            </span></span>
+                                    </span>
+                                    <span class="replace menu-link icon">
+
+                                    </span>
+                                </span>
+                                <ul class="book-stats" style="list-style: none;">
+                                    <li class="stat-bookstat-watches">
+                                        <a href="/film/wicked-2024/members/"
+                                            class="has-icon icon-watched icon-16 tooltip"
+                                            data-original-title="Watched by 398,586&nbsp;members">
+                                            <span class="icon">
+                                                <fa-icon class="fs d-icon" [icon]="['fas', 'eye']">
+                                                </fa-icon>
+                                            </span>399K</a>
+                                    </li>
+                                    <li class="stat bookstat-lists">
+                                        <a>
+                                            <span class="icon">
+                                                <fa-icon class="fs d-icon" [icon]="['fas', 'heart']">
+                                                </fa-icon> </span>
+                                        </a>
+                                    </li>
+                                </ul>
+
+                                <a href="" class="frame has-menu">
+                                </a>
+                            </div>
 
                         </li>
                     </ul>
                 </div>
             </div>
         </section>
-    </div>
-</div>

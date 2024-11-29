@@ -8,7 +8,7 @@ import { RouterModule } from '@angular/router';
 import { ReactiveFormsModule } from '@angular/forms';
 import { LoginComponent } from './pages/login/login.component';
 import { FaIconLibrary, FontAwesomeModule } from '@fortawesome/angular-fontawesome';
-import { faCircleUser, faEye, faKey, faXmark } from '@fortawesome/free-solid-svg-icons';
+import { faArrowUpShortWide, faCaretDown, faCircleUser, faEye, faHeart, faKey, faXmark } from '@fortawesome/free-solid-svg-icons';
 import { NavbarComponent } from './shared/navbar/navbar.component';
 import { LivrosComponent } from './pages/livros/livros/livros.component';
 
@@ -37,6 +37,6 @@ import { LivrosComponent } from './pages/livros/livros/livros.component';
 export class AppModule {
 
   constructor(private library: FaIconLibrary){
-    library.addIcons(faCircleUser,faKey,faEye,faXmark)
+    library.addIcons(faCircleUser,faKey,faEye,faXmark,faCaretDown,faArrowUpShortWide,faHeart,)
   }
  }

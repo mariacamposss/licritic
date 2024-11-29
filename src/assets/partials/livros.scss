@@ -1,3 +1,74 @@
 .poster .image{
- border-radius:1rem ;
+  border-radius: 6px;
+ 
+
+}
+
+.carousel img{
+    cursor: pointer;
+   
+}
+.book-stats{
+    clear: both;
+    display: block;
+    font-size: 0;
+    margin-left: -16px;
+    margin-right: -16px;
+    padding: 10px 0 5px;
+    position: relative;
+    text-align: center;
+}
+
+.book-stats>.stat{
+    display: inline-block;
+    margin: 0.5px;
+}
+ul{
+display: block;
+list-style-type: disc;
+margin-block-start: 1rem;
+margin-block-end: 1rem;
+margin-inline-start: 0px;
+margin-inline-end: 0px;
+padding-inline-start: 40px;
+unicode-bidi: isolate;
+}
+
+.carousel-horizontal .carousel-nav .carousel-prev {
+    left: -40px;
+    top: 0;
+}
+
+.carousel-nav li {
+    position: absolute;
+}
+
+.carousel-nav a {
+    cursor: pointer;
+    display: block;
+    height: 340px;
+    position: relative;
+    width: 30px;
+}
+
+a {
+    color: #678;
+    text-decoration: none;
+}
+
+.carousel-horizontal .carousel-nav .carousel-prev a.carousel-disabled span {
+    background-position: -400px -770px;
+}
+
+.carousel-nav a span {
+    display: block;
+    height: 20px;
+    left: 50%;
+    margin: -10px 0 0 -10px;
+    overflow: hidden;
+    position: absolute;
+    text-indent: 110%;
+    top: 50%;
+    white-space: nowrap;
+    width: 20px;
 }
